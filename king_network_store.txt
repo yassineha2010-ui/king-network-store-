@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>King Network Store</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    background: #111;
+    box-shadow: 0 0 10px gold;
+}
+
+h1 {
+    color: gold;
+    margin: 0;
+}
+
+p {
+    color: #ccc;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: #1c1c1c;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+    box-shadow: 0 0 10px #000;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px gold;
+}
+
+button {
+    background: gold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: orange;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: #111;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>👑 King Network Store</h1>
+<p>Buy Discord Ranks Instantly & Securely</p>
+</header>
+
+<div class="container">
+
+<!-- Bronze -->
+<div class="card">
+<h2>🟤 Bronze</h2>
+<p>$1.99</p>
+<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL_LINK/1.99" target="_blank">
+<button>Buy Now</button>
+</a>
+</div>
+
+<!-- Gold -->
+<div class="card">
+<h2>🟡 Gold</h2>
+<p>$3.99</p>
+<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL_LINK/3.99" target="_blank">
+<button>Buy Now</button>
+</a>
+</div>
+
+<!-- Diamond -->
+<div class="card">
+<h2>💎 Diamond</h2>
+<p>$8.99</p>
+<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL_LINK/8.99" target="_blank">
+<button>Buy Now</button>
+</a>
+</div>
+
+<!-- King -->
+<div class="card">
+<h2>👑 King</h2>
+<p>$10.00</p>
+<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL_LINK/10" target="_blank">
+<button>Buy Now</button>
+</a>
+</div>
+
+</div>
+
+<div class="footer">
+
+<h3>⭐ Rate Our Store</h3>
+<p>★★★★★</p>
+
+<br>
+
+<a href="https://discord.gg/M2BMzzRp" target="_blank">
+<button>Join Discord Server</button>
+</a>
+
+</div>
+
+</body>
+</html>
