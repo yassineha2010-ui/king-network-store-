@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KING NETWORK STORE</title>
+    <style>
+        body {
+            background: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #b8860b, #ffd700);
+            padding: 40px;
+        }
+        h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+        .buttons {
+            margin: 20px;
+        }
+        .discord-button, .buy-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            color: white;
+        }
+        .discord-button {
+            background: #7289da;
+        }
+        .buy-button {
+            background: #888888;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .ranks {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .rank {
+            background: #1b1b1b;
+            border: 2px solid gold;
+            border-radius: 10px;
+            width: 220px;
+            padding: 20px;
+            display: inline-block;
+        }
+        .rank h3 {
+            color: gold;
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .purchase-form {
+            margin-top: 40px;
+            background: #1b1b1b;
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            width: 80%;
+        }
+        .purchase-form input, .purchase-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .purchase-form button {
+            background: #b8860b;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .orders {
+            margin-top: 40px;
+            background: #1b1b1b;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 100px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>👑 KING NETWORK STORE</h1>
+        <p>Exclusive Ranks for Our Community</p>
+    </header>
+
+    <div class="buttons">
+        <a class="discord-button" href="https://discord.gg/M2BMzzRp" target="_blank">Join Our Discord</a>
+        <a class="buy-button" href="#purchase">Buy Now</a>
+    </div>
+
+    <div class="container">
+        <div class="ranks">
+            <div class="rank">
+                <h3>🥉 Bronze Follower</h3>
+                <p class="price">$1.99</p>
+            </div>
+            <div class="rank">
+                <h3>🥇 Gold Follower</h3>
+                <p class="price">$4.99</p>
+            </div>
+            <div class="rank">
+                <h3>💎 Diamond Follower</h3>
+                <p class="price">$8.99</p>
+            </div>
+            <div class="rank">
+                <h3>👑 Royal Follower</h3>
+                <p class="price">$10.00</p>
+            </div>
+        </div>
+
+        <div class="purchase-form" id="purchase">
+            <h2>Purchase Your Rank</h2>
+            <form>
+                <input type="text" name="discordName" placeholder="Enter your Discord name" required>
+                <textarea name="comments" placeholder="Add any comments here"></textarea>
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+
+        <div class="orders">
+            <h3>Your Orders</h3>
+            <p>Order details will appear here after submission.</
