@@ -6,73 +6,100 @@
 
 <style>
 body {
-    font-family: Arial;
-    background: #0d0d0d;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
     color: white;
     text-align: center;
-    margin: 0;
 }
 
+/* HEADER */
 header {
-    padding: 20px;
+    padding: 40px 20px;
     background: #111;
-    box-shadow: 0 0 10px gold;
+    box-shadow: 0 0 20px gold;
 }
 
 h1 {
-    color: gold;
     margin: 0;
+    font-size: 36px;
+    color: gold;
+    letter-spacing: 2px;
 }
 
 p {
     color: #ccc;
+    font-size: 16px;
 }
 
+/* STORE CONTAINER */
 .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 40px;
+    gap: 20px;
 }
 
+/* CARDS */
 .card {
-    background: #1c1c1c;
-    margin: 15px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 240px;
     padding: 20px;
-    border-radius: 12px;
-    width: 220px;
-    box-shadow: 0 0 10px #000;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
     transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255,215,0,0.1);
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px gold;
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px gold;
 }
 
+/* PRICE */
+.price {
+    font-size: 20px;
+    color: gold;
+    margin: 10px 0;
+}
+
+/* BUTTON */
 button {
-    background: gold;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    margin-top: 10px;
     width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: gold;
+    color: black;
     font-weight: bold;
-    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
     background: orange;
 }
 
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    background: #111;
+}
+
 a {
     text-decoration: none;
 }
 
-.footer {
-    margin-top: 30px;
-    padding: 20px;
-    background: #111;
+/* DISCORD BUTTON */
+.discord {
+    background: #5865F2;
+    color: white;
+}
+.discord:hover {
+    background: #4752c4;
 }
 </style>
 </head>
@@ -80,62 +107,62 @@ a {
 <body>
 
 <header>
-<h1>👑 King Network Store</h1>
-<p>Buy Discord Ranks Instantly & Securely</p>
+<h1>👑 KING NETWORK STORE</h1>
+<p>This is an online store where you can purchase exclusive Discord ranks in the KING NETWORK community.</p>
 </header>
 
 <div class="container">
 
-<!-- Bronze -->
+<!-- BRONZE -->
 <div class="card">
 <h2>🟤 Bronze</h2>
-<p>$1.99</p>
-<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL_LINK/1.99" target="_blank">
+<div class="price">$1.99</div>
+<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL/1.99" target="_blank">
 <button>Buy Now</button>
 </a>
 </div>
 
-<!-- Gold -->
+<!-- GOLD -->
 <div class="card">
 <h2>🟡 Gold</h2>
-<p>$3.99</p>
-<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL_LINK/3.99" target="_blank">
+<div class="price">$3.99</div>
+<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL/3.99" target="_blank">
 <button>Buy Now</button>
 </a>
 </div>
 
-<!-- Diamond -->
+<!-- DIAMOND -->
 <div class="card">
 <h2>💎 Diamond</h2>
-<p>$8.99</p>
-<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL_LINK/8.99" target="_blank">
+<div class="price">$8.99</div>
+<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL/8.99" target="_blank">
 <button>Buy Now</button>
 </a>
 </div>
 
-<!-- King -->
+<!-- KING -->
 <div class="card">
 <h2>👑 King</h2>
-<p>$10.00</p>
-<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL_LINK/10" target="_blank">
+<div class="price">$10.00</div>
+<a href="https://www.paypal.com/paypalme/YOUR_PAYPAL/10" target="_blank">
 <button>Buy Now</button>
 </a>
 </div>
 
 </div>
 
-<div class="footer">
+<footer>
 
-<h3>⭐ Rate Our Store</h3>
+<h2>⭐ Rate Our Store</h2>
 <p>★★★★★</p>
 
 <br>
 
 <a href="https://discord.gg/M2BMzzRp" target="_blank">
-<button>Join Discord Server</button>
+<button class="discord">Join Discord Server</button>
 </a>
 
-</div>
+</footer>
 
 </body>
 </html>
